@@ -10,6 +10,13 @@ namespace Operators_hw
     {
         static void Main(string[] args)
         {
+            Block block = new Block(1, 2, 3, 4);
+            Block otherBlock = new Block(1, 2, 3, 3);
+            Console.WriteLine(block);
+            if(block.Equals(otherBlock))
+            {
+                Console.WriteLine(otherBlock);
+            }
         }
     }
 }
