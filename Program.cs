@@ -10,9 +10,11 @@ namespace Operators_hw
     {
         static void Main(string[] args)
         {
-            Date gfBirthday = new Date(28, 9, 2004);
-            Date myBirthday = new Date(18, 11, 2005);
-            Console.WriteLine("age difference: " + (myBirthday - gfBirthday));
+            Point3d a = new Point3d(1, 2, 3);
+            Point3d b = new Point3d(3, 2, 1);
+            Console.WriteLine($"point a: {a}");
+            Console.WriteLine($"point b: {b}");
+            Console.WriteLine($"point a+b: {a + b}");
         }
     }
 }
