@@ -10,12 +10,9 @@ namespace Operators_hw
     {
         static void Main(string[] args)
         {
-            string[] houses = { "Skalda 5", "qwerty" };
-            House mainHouse = new House(1, houses);
-            House shallowClone = mainHouse.Clone();
-            House deepClone = mainHouse.DeepClone();
-            mainHouse.ShallowCloneCheck(shallowClone);
-            mainHouse.DeepCloneCheck(deepClone);
+            Date gfBirthday = new Date(28, 9, 2004);
+            Date myBirthday = new Date(18, 11, 2005);
+            Console.WriteLine("age difference: " + (myBirthday - gfBirthday));
         }
     }
 }
