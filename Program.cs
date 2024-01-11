@@ -10,13 +10,12 @@ namespace Operators_hw
     {
         static void Main(string[] args)
         {
-            Block block = new Block(1, 2, 3, 4);
-            Block otherBlock = new Block(1, 2, 3, 3);
-            Console.WriteLine(block);
-            if(block.Equals(otherBlock))
-            {
-                Console.WriteLine(otherBlock);
-            }
+            string[] houses = { "Skalda 5", "qwerty" };
+            House mainHouse = new House(1, houses);
+            House shallowClone = mainHouse.Clone();
+            House deepClone = mainHouse.DeepClone();
+            mainHouse.ShallowCloneCheck(shallowClone);
+            mainHouse.DeepCloneCheck(deepClone);
         }
     }
 }
